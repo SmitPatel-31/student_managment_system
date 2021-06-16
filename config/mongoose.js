@@ -13,6 +13,7 @@ mongoose.connect(db,{
 }).catch((err)=>console.log(`no connection`));
 
 
+
 // db.on('error',console.error.bind(console,"Error n conection"))
 
 // db.once('open',function(){
