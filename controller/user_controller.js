@@ -35,7 +35,7 @@ module.exports.create= function(req,res){
         if(!student_signup){
             student.create (req.body,function(err,student_signup){
                 if(err){
-                    console.log('not connected',err);return
+                    console.log('not connected122',err);return
                 }
                 return res.redirect('/users/signin_student');
             })

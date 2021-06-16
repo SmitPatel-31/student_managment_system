@@ -1,9 +1,9 @@
 const mongoose =require('mongoose');
 
 const dotenv = require('dotenv');
-const db = process.env.MONGODB_URI||'mongodb+srv://smit:smitp31076351@cluster0.rzg9x.mongodb.net/students?retryWrites=true&w=majority';
+const db = process.env.MONGODB_URI;
 
-mongoose.connect(process.env.MONGODB_URI || db,{
+mongoose.connect(process.env.MONGODB_URI ,{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology:true,
