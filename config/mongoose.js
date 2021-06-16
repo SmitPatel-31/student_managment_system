@@ -3,12 +3,13 @@ const mongoose =require('mongoose');
 const dotenv = require('dotenv');
 const db = process.env.MONGODB_URI;
 
-mongoose.connect(process.env.MONGODB_URI ,{
-    useNewUrlParser:true,
+mongoose.connect(process.env.MONGODB_URI );
+//     ,{
+//     useNewUrlParser:true,
 
-    useUnifiedTopology:true
+//     useUnifiedTopology:true
 
-});
+// });
 
 // .then(()=>{
 //     console.log(`connected sucessfully`);
