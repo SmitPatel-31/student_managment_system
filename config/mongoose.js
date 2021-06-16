@@ -1,8 +1,26 @@
 const mongoose =require('mongoose');
 
 const dotenv = require('dotenv');
-const db = process.env.MONGODB_URI;
 
+
+
+const mongoAtlasUri =
+  "mongodb+srv://smit:smit@123@cluster0.rzg9x.mongodb.net/students?retryWrites=true&w=majority";
+
+try {
+  // Connect to the MongoDB cluster
+  mongoose.connect(
+    mongoAtlasUri,
+    { useNewUrlParser: true, useUnifiedTopology: true },
+    () => console.log(" Mongoose is connected"),
+  );
+} catch (e) {
+  console.log("could not connect");
+}
+
+const dbConnection = mongoose.connection;
+dbConnection.on("error", (err) => console.log(`Connection error ${err}`));
+dbConnection.once("open", () => console.log("Connected to DB!"));
 // mongoose.connect(process.env.MONGODB_URI,{
 //     useNewUrlParser:true,
 //     useCreateIndex:true,
@@ -25,4 +43,4 @@ console.log("could not connect");
 //     console.log("connecting to database");
 // });
 
-module.exports=(db);
+// module.exports=(mongoAtlasUri);
