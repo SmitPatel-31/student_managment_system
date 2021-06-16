@@ -20,4 +20,4 @@ mongoose.connect(process.env.MONGODB_URI || db,{
 //     console.log("connecting to database");
 // });
 
-module.exports=process.env.MONGODB_URI|| db;
+module.exports={mongoose};
