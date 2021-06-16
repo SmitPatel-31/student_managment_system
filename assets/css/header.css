@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+}
+.heading{
+    background-color:rgb(71, 209, 36);
+    color: rgb(218, 36, 36);
+    display:flex;
+    margin: 0px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+#heading_side{
+    margin-left: auto;
+    padding-left: 20px;
+}

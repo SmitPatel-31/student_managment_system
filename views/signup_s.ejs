@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            hello
+        </title>
+    </head>
+    <body>
+        <h1>Sign Up Page For Students</h1>
+        <div>
+            <form action="/users/create" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="example@xyz.com" required>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="date" name="birthdate"  required>
+                <input type="number" name="rollno" placeholder="rollno" required>
+                <!-- <input type="number" name="std" placeholder="std" required> -->
+                <select name="std" id="std" required>
+                    <option value="">-chhose std--</option>
+                    <option value="10">Std 10</option>
+                    <option value="11">Std 11</option>
+                    <option value="12">Std 12</option>
+                </select>
+                <input type="submit" value="sign up">
+
+
+            </form>
+        </div>
+    </body>
+</html>

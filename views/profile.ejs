@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <%= title %>
+    </head>
+    <body>
+        <div>
+            <a href="/users/signout"> sign out</a>
+        </div>
+        <div>
+         name: <%= user.name%>
+         
+        
+        <%- include ('form'); -%>
+
+        <% for (form of forms){%>
+            <% if (form.student_signup.id == a) { %>
+                <%= form.std %>
+                <%= form.subject%>
+                <%= form.student_signup.name %>
+                <%= form.student_signup.std %>
+                <br>
+            <% } %>
+        <%} %>
+
+
+    </div>
+    <div>
+        
+    </div>
+    </body>
+</html>
+
