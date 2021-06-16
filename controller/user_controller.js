@@ -71,6 +71,7 @@ module.exports.createsession= function(req,res){
             res.send("invalid password")
             return (res.redirect('back'));
         }
+        student.save();
     });
 
 }
