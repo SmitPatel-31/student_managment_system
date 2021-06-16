@@ -3,17 +3,15 @@ const mongoose =require('mongoose');
 const dotenv = require('dotenv');
 const db = process.env.MONGODB_URI;
 
-mongoose.connect(process.env.MONGODB_URI );
-//     ,{
-//     useNewUrlParser:true,
+mongoose.connect(process.env.MONGODB_URI,{
+    useNewUrlParser:true,
+    useCreateIndex:true,
+    useUnifiedTopology:true,
+    useFindAndModify:false
 
-//     useUnifiedTopology:true
-
-// });
-
-// .then(()=>{
-//     console.log(`connected sucessfully`);
-// }).catch((err)=>console.log(`no connection bhaiiii`));
+}).then(()=>{
+    console.log(`connected sucessfully`);
+}).catch((err)=>console.log(`no connection bhaiiii`));
 
 
 
@@ -23,4 +21,4 @@ mongoose.connect(process.env.MONGODB_URI );
 //     console.log("connecting to database");
 // });
 
-module.exports={mongoose};
+module.exports=(db);
