@@ -30,13 +30,14 @@ module.exports.create= function(req,res){
     // console.log(req.body)
     student.findOne({email:req.body.email},function(err,student_signup){
         if(err){
-            console.log('error in finding user');return
+            console.log('error in finding user', err);return
         }
         if(!student_signup){
             student.create (req.body,function(err,student_signup){
                 if(err){
                     console.log('not connected122',err);return
                 }
+                c
                 return res.redirect('/users/signin_student');
             })
         }
