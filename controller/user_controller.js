@@ -37,7 +37,7 @@ module.exports.create= function(req,res){
                 if(err){
                     console.log('not connected122',err);return
                 }
-                c
+                console.log(student_signup);
                 return res.redirect('/users/signin_student');
             })
         }
