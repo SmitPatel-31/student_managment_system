@@ -5,12 +5,14 @@ const db = process.env.MONGODB_URI;
 
 mongoose.connect(process.env.MONGODB_URI ,{
     useNewUrlParser:true,
-    useCreateIndex:true,
-    useUnifiedTopology:true,
-    useFindAndModify:false
-}).then(()=>{
-    console.log(`connected sucessfully`);
-}).catch((err)=>console.log(`no connection`));
+
+    useUnifiedTopology:true
+
+});
+
+// .then(()=>{
+//     console.log(`connected sucessfully`);
+// }).catch((err)=>console.log(`no connection bhaiiii`));
 
 
 
