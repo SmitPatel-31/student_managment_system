@@ -1,7 +1,7 @@
 const mongoose =require('mongoose');
 
 
-const db = 'mongodb+srv://smit:smitp31076351@cluster0.rzg9x.mongodb.net/students?retryWrites=true&w=majority';
+const db = process.env.MONGO_URI||'mongodb+srv://smit:smitp31076351@cluster0.rzg9x.mongodb.net/students?retryWrites=true&w=majority';
 
 mongoose.connect(db,{
     useNewUrlParser:true,
