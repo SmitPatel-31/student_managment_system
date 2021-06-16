@@ -1,9 +1,9 @@
 const mongoose =require('mongoose');
 
 
-const db = process.env.MONGO_URI||'mongodb+srv://smit:smitp31076351@cluster0.rzg9x.mongodb.net/students?retryWrites=true&w=majority';
+const db = process.env.MONGODB_URI||'mongodb+srv://smit:smitp31076351@cluster0.rzg9x.mongodb.net/students?retryWrites=true&w=majority';
 
-mongoose.connect(db,{
+mongoose.connect(process.env.MONGODB_URI || db,{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology:true,
@@ -20,4 +20,4 @@ mongoose.connect(db,{
 //     console.log("connecting to database");
 // });
 
-module.exports= db;
+module.exports=process.env.MONGODB_URI|| db;
