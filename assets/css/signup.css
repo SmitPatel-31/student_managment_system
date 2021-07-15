@@ -1,0 +1,118 @@
+body{
+    background-color:#03256c;
+}
+h1{
+    color: #F0EBCC;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+.signup form  input  {
+/*     
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto; */
+    width:300px;
+    align-items: center;
+    background-color:#03256c;
+    border: none;
+    border-bottom:solid 2px #ff811a;
+    
+
+    color:#ff811a;
+    font-size: 20px;
+    border-bottom: solid #ff811a 2px;
+    margin-top: 5px;
+    padding: 5px;
+}
+label{
+    color: #ff811a;
+}
+.signup form {
+    /* display:flex;
+    flex-flow: row wrap;*/
+    align-items: center;
+    margin: auto; 
+    width:300px;
+    /* margin-top:13vh ; */
+    background-color:#03256c;
+    border: none;
+    font-size: medium;
+    margin-top: 30px;
+
+    
+
+    
+    
+}
+
+.select{
+      text-align: center;
+  }
+.select select {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0px;
+    color:#ff811a;
+    text-align: center;
+    border: none;
+    z-index: 1;
+    width: 300px;
+    background-color:#03256c;
+    margin-top: 20px;
+    
+    font-size: medium;
+  }
+  
+.texdesign{
+    font-size: 20px;
+    margin-top:50px;
+}
+
+.form-spacing{
+    margin-top: 25px;
+}
+
+.submit  {
+    
+    text-align: center;
+}
+
+.submit form input{
+    border: none;
+    background-color: #ff811a;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    padding:10px
+}
+submit form input:hover{
+    background-color:#03256c;
+}
+
+#please{
+    border:none;
+    border: none;
+    background-color: #ff811a;
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    padding:10px;
+    color: #03256c;
+    
+}
+
+.signup{
+    border: #ff811a solid 3px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    
+}

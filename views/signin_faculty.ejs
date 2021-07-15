@@ -3,16 +3,31 @@
         <title>
             Sign In for faculty
         </title>
+        <link rel="stylesheet" href="/css/signint.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
+        <h1>Sign In Page For Principal</h1>
+        <div class="signin">
             <form action="/users/ragister" method="POST">
+                <div class="box">
+                    <label for="email">Email</label>
                 <input type="email" name="email" placeholder="example@xyz.com" required>
+            </div>
+            <div class="box">
+                <label for="password">Password</label>
                 <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div id="subt">
                 <input type="submit" value="submit">
+            </div>
 
                 
             </form>
+        </div>
+        <div class="bottom">
+            If you are student  &nbsp&nbsp&nbsp<a href="/users/signin_student" class="left">Click Me</a>
         </div>
     </body>
 </html>

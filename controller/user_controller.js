@@ -1,5 +1,6 @@
 const student = require('../models/student_signup');
-const Form = require('../models/form')
+const Form = require('../models/form');
+const Principal = require('../models/principal');
 const bcrypt = require('bcrypt');
 //  const cookieSession = require('cookie-session');
 const { getMaxListeners } = require('../models/student_signup');
@@ -104,6 +105,7 @@ module.exports.signin_faculty = function(req, res){
 }
 
 module.exports.ragister=function(req,res){
+    
     if(req.body.email==='principal@gmail.com' && req.body.password==123456){
         res.cookie('principal_id',req.body.email);
         if(req.cookies['principal_id']!=null){

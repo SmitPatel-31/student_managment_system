@@ -1,0 +1,12 @@
+h1{
+    color:#b60c78;
+    font-family: 'Niconne', cursive;
+    font-size: 60px;
+    margin-top:10vh;
+    text-align: center;
+
+}
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  

@@ -10,6 +10,7 @@
   "author": "Smit Patel",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",
     "cookie-session": "^1.4.0",

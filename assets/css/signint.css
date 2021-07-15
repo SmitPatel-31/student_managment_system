@@ -1,0 +1,103 @@
+body{
+    background-color: #03256c;
+}
+
+
+
+h1{
+    
+    color: #F0EBCC;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;        
+}
+
+.signin{
+    border: #ff811a solid 3px;
+    width: fit-content;
+    margin: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+}
+.signin form{
+    color: #ff811a;
+    background-color: #03256c;
+    
+}
+.signin form input {
+    width:300px;
+    align-items: center;
+    background-color:#03256c;
+    border: none;
+    border-bottom:solid 2px #ff811a;
+    display: block;
+
+    color:#ff811a;
+    font-size: 20px;
+    border-bottom: solid #ff811a 2px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.box{
+    margin-top: 30px;
+
+}
+#subt input{
+
+    color: #03256c;
+    background-color: #ff811a;
+    margin-top:30px ;
+    padding: 10px;
+    
+}
+.bottom{
+    color: #F0EBCC;
+    font-family: 'Lato', sans-serif;
+    
+    text-align: center;
+    
+}
+.bottom a{
+    color: #F0EBCC;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#subt input[type="submit"]:hover{
+    color:#053cae;
+    background-color:#f76f00;
+    /* border: #ff811a solid 3px; */
+}
+
+.bottom a.left
+{
+    position: relative;
+    
+}
+
+.bottom a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff811a;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  
+  
+}
+.bottom a.left:hover{
+    color: #ff811a;
+}
+.bottom a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+    
+  }

@@ -2,15 +2,43 @@ body{
     margin: 0px;
 }
 .heading{
-    background-color:rgb(71, 209, 36);
-    color: rgb(218, 36, 36);
+    background-color:#03256c;
+    color: #ff811a;
     display:flex;
     margin: 0px;
     flex-direction: row;
     align-content: center;
     align-items: center;
+    height: 10%;
+    font-family: 'Caveat', cursive;
+}
+.name{
+    font-size:5vh;
+    margin-left: 2%;
 }
 #heading_side{
     margin-left: auto;
-    padding-left: 20px;
+    padding: 20px;
+    
 }
+#heading_side a{
+    border: solid;
+    border-color: #ff811a;
+    color: #ff811a;
+    padding:15px;
+    border-radius:25px;
+    margin:0px 15px;
+    text-decoration: none;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 1px;
+    font-size: 2vh;
+}
+
+#heading_side :hover{
+    background-color: #ff811a;
+    color:#03256c;
+}
+
+
+
