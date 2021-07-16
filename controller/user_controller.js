@@ -210,12 +210,13 @@ module.exports.profile =async function(req,res){
     let users =await student.findById(a);
     console.log(users.name)
     let abc= await Form.find({}).populate('student_signup').exec(function(req,forms){
+        
         return res.render('profile',{
             title:"Profile",
             forms:forms,
             user:users,
-            a:a
-           
+            a:a,
+            
             
             
             
