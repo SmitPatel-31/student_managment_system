@@ -62,3 +62,7 @@ p.name:hover:before {
     visibility: visible;
     width: 100%;
   }
+  header>.heading>.name {
+    animation: jello 6000ms infinite both;
+    transform-style: preserve-3d
+}
