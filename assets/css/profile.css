@@ -1,0 +1,52 @@
+body{
+margin: 0px;
+}
+p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.userdetail  {
+    display: flex;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    flex-direction: row;
+    width:100%;
+    height: 100px;
+}
+
+
+.userdetail .inside{
+    display: flex;
+    align-items: center;
+
+}
+.signout{
+    margin-left:78%;
+    border: white solid 3px;
+    padding: 15px;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    background-color:#fdcd3b;
+}
+.signout a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    width: 100%;
+    
+}
+.signout:hover{
+    background-color:#ffed4b;
+    
+
+}
+.signout a:hover{
+
+    color: black;
+
+}
+.inside{
+    width: 100vw;
+}

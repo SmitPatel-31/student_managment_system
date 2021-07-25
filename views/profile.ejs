@@ -1,17 +1,32 @@
 <html>
     <head>
-        <%= title %>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/css/profile.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <a href="/users/signout"> sign out</a>
-        </div>
-        <div>
-         name: <%= user.name%>
-         
         
+        <div>
+            <div class="userdetail"> 
+                <i class="material-icons" style="font-size:100px">
+                    person
+                </i>
+                <div class="inside">
+                    <div>
+                    <p>
+                Name: <%= user.name%></p>
+                <p>Std: <%= user.std%></p>
+            </div>
+            <div class="signout">
+                <a href="/users/signout"> Sign out</a>
+                
+            </div>
+                </div>
+            </div>
+        <div>
         <%- include ('form'); -%>
-
+        </div>
         <% for (form of forms){%>
             <% if (form.student_signup.id == a && form.student_signup) { %>
                 <%= form.std %>

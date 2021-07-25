@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     align-content: center;
     align-items: center;
-    height: 10%;
+    height: 80px;
     font-family: 'Caveat', cursive;
 }
 .name{
