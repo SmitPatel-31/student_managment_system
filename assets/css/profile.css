@@ -50,3 +50,13 @@ p{
 .inside{
     width: 100vw;
 }
+
+.form_container{
+    margin-top: -21px;
+   color:#00369B		;
+   /* background: #1B5277;
+   background: -webkit-linear-gradient(top left, #1B5277, #1BDE9A);
+   background: -moz-linear-gradient(top left, #1B5277, #1BDE9A);
+   background: linear-gradient(to bottom right, #1B5277, #1BDE9A); */
+   background-color:white
+}
