@@ -58,5 +58,73 @@ p{
    background: -webkit-linear-gradient(top left, #1B5277, #1BDE9A);
    background: -moz-linear-gradient(top left, #1B5277, #1BDE9A);
    background: linear-gradient(to bottom right, #1B5277, #1BDE9A); */
-   background-color:white
+   background-color:white;
+   font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+
+   
+}
+
+.form_container h1 {
+    text-align: center;
+
+}
+
+#ee{
+    text-align: center;
+}
+.ee{
+    text-align: center;
+}
+
+.ffd{
+    color:black;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    width: 400px;
+    margin: 10px;
+    border: black solid 3px;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.hhh{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.form_container form{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    line-height: 22px;
+}
+
+body>div>.hhh {
+    animation: pulse 1400ms backwards;
+    transform-style: preserve-3d
+}
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+#saveform{
+    font-size: large;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    padding: 10px;
+    width: 250px;
+    margin-top: 20px;
 }
