@@ -21,12 +21,17 @@
     </header>
         <div>
             <ul>
-                
-                    <% for (form of forms){%>
-                        <hr size="2" width="100%">
-                        <br>
-                        <li>
+                <p class="naeming">Std 10th Students Reviews</p>
+                <div class="hhh">
 
+
+                    <% for (form of forms){%>
+                        
+
+
+                        <% if (form.std == '10') { %>
+                        
+                            <div class="ffd">
                             
                             Std  &ensp;
                             <%= form.std %>
@@ -57,12 +62,107 @@
                             Is there any other feedback you'd like to give on this class? &ensp;
                             <%= form.feedback%>
                             <br>
-
-                        </li>
-                        <hr size="2" width="100%">
+                        </div>
+                        
+                        <% } %>
                         
                     <%} %>
-                
+                </div>
+                <p class="naeming">Std 11th Students Reviews</p>
+
+                <div class="hhh11">
+
+                    
+                    <% for (form of forms){%>
+                        
+
+
+                        <% if (form.std == '11') { %>
+                        
+                            <div class="ffd11">
+                            
+                            Std  &ensp;
+                            <%= form.std %>
+                            <br>
+                            Subject &ensp;
+                            <%= form.subject%>
+                            <br>
+                            The instructor's contribution to the course was: &ensp;
+                            <%= form.q1%>
+                            <br>
+                            Instructor's use of examples and illustrations was:  &ensp;
+                            <%= form.q2%>
+                            <br>
+                            tudent's confidence in instructor's knowledge was: &ensp;
+                            <%= form.q3%>
+                            <br>
+                            Amount you learned was:	&ensp;
+                            <%= form.q4%>
+                            <br>
+                            The course as a whole was &ensp;
+                            <%= form.q5%>
+                            <br>
+                            The course content was: &ensp;
+                            <%= form.q6%><br>
+                            What grade do you expect in this course? &ensp;
+                            <%= form.grade%>
+                            <br>
+                            Is there any other feedback you'd like to give on this class? &ensp;
+                            <%= form.feedback%>
+                            <br>
+                        </div>
+                        
+                        <% } %>
+                        
+                    <%} %>
+                </div>
+                <p class="naeming">Std 12th Students Reviews</p>
+                <div class="hhh12">
+
+                    
+                    <% for (form of forms){%>
+                        
+
+
+                        <% if (form.std == '12') { %>
+                        
+                            <div class="ffd12">
+                            
+                            Std  &ensp;
+                            <%= form.std %>
+                            <br>
+                            Subject &ensp;
+                            <%= form.subject%>
+                            <br>
+                            The instructor's contribution to the course was: &ensp;
+                            <%= form.q1%>
+                            <br>
+                            Instructor's use of examples and illustrations was:  &ensp;
+                            <%= form.q2%>
+                            <br>
+                            tudent's confidence in instructor's knowledge was: &ensp;
+                            <%= form.q3%>
+                            <br>
+                            Amount you learned was:	&ensp;
+                            <%= form.q4%>
+                            <br>
+                            The course as a whole was &ensp;
+                            <%= form.q5%>
+                            <br>
+                            The course content was: &ensp;
+                            <%= form.q6%><br>
+                            What grade do you expect in this course? &ensp;
+                            <%= form.grade%>
+                            <br>
+                            Is there any other feedback you'd like to give on this class? &ensp;
+                            <%= form.feedback%>
+                            <br>
+                        </div>
+                        
+                        <% } %>
+                        
+                    <%} %>
+                </div>
             </ul>
         </div>
 
