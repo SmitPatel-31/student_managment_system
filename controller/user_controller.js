@@ -104,11 +104,13 @@ module.exports.signin_faculty = function(req, res){
     
 }
 
-module.exports.ragister=function(req,res){
+module.exports.ragister=async function(req,res){
     
-    if(req.body.email==='principal@gmail.com' && req.body.password==123456){
+    if(req.body.email==='principal1@gmail.com' && req.body.password==123456){
         res.cookie('principal_id',req.body.email);
-        if(req.cookies['principal_id']!=null){
+        
+
+        
                 Form.find({},function(err,forms){
             return res.render('dashboard',{
                 title:"dashboard",
@@ -119,10 +121,8 @@ module.exports.ragister=function(req,res){
 
     
             
-        }
-        else{
-            return res.redirect('/users/signin_principal'); 
-        }
+        
+        
     }else{
         return res.redirect('/');
     }
