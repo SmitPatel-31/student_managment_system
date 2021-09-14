@@ -165,3 +165,33 @@ body>div>.hhh {
 body>div>.hhh {
     animation: bounceInUp 1000ms both
 }
+
+textarea{
+    border: none;
+    width: 500px;
+    height: 80px;
+    border: #fdcd3b solid;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::placeholder{
+    color: black;
+}
+select{
+    border: #fdcd3b solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+select ::placeholder{
+    color: black;
+}
+input{
+    border: #fdcd3b solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input::placeholder{
+    color: black;
+}
