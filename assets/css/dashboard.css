@@ -288,3 +288,51 @@ div>ul>.hhh11 {
         transform: translate3d(0, 0, 0);
     }
 }
+#boxes{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+}
+
+    
+}
+a .small{
+    
+    
+    text-decoration: none;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #c9184a;
+    margin:0;
+    text-align: center;
+}
+div .small{
+    font-size:50px;
+    padding: 60px;
+    border: #6930c3 solid 3px;
+    position: relative;
+    
+    border-radius: 25px;
+
+
+
+}
+div .small1 :hover{
+    
+    
+    
+    
+    background-color: #6930c3;
+    
+}
+
