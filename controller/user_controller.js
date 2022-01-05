@@ -251,3 +251,14 @@ module.exports.sign_out_faculty= function(req,res){
         {title:"Home"});
 
 }
+
+module.exports.std10detail = function(req,res){
+    Form.find({},function(err,forms){
+        return res.render('std10_detail',{
+            title:"std10",
+            forms:forms
+            
+        });
+    });
+    
+}

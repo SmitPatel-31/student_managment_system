@@ -16,3 +16,4 @@ router.post('/ragister',userController.ragister);
 router.get('/dashboard',userController.signin_faculty);
 router.get('/signout',userController.signout);
 router.get('/sign_out_faculty',userController.sign_out_faculty);
+router.get('/std10detail',userController.std10detail);
