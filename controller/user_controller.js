@@ -262,3 +262,23 @@ module.exports.std10detail = function(req,res){
     });
     
 }
+module.exports.std11detail = function(req,res){
+    Form.find({},function(err,forms){
+        return res.render('std11_detail',{
+            title:"std11",
+            forms:forms
+            
+        });
+    });
+    
+}
+module.exports.std12detail = function(req,res){
+    Form.find({},function(err,forms){
+        return res.render('std12_detail',{
+            title:"std12",
+            forms:forms
+            
+        });
+    });
+    
+}
